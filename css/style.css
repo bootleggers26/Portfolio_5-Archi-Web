@@ -15,6 +15,7 @@ body {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 /******************************************** nav ******************************/
@@ -129,6 +130,7 @@ body {
 .menu-modal li:last-child {
   /* border-bottom: none; */
 }
+
 /******************************************** text ******************************/
 
 .text__img {
@@ -176,12 +178,420 @@ body {
   padding-top: 9px;
 }
 
+/******************************************** service ******************************/
+
+.service {
+  background-color: rgba(37, 77, 77, 0.2);
+  height: 384px;
+  margin-bottom: 74px;
+}
+.h2__service {
+  color: #2f2e2e;
+  text-align: center;
+  font-family: "Playfair Display";
+  font-size: 51px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  margin: 0 auto;
+  padding-top: 14px;
+  padding-left: 7px;
+}
+.flex__service {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 25px;
+}
+.service__item {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 46px;
+}
+.service__item {
+  padding: 20px;
+}
+
+.img__service-container {
+  width: 103px;
+  height: 103px;
+  border-radius: 50%;
+  background-color: #254d4d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.service__item.planning .img__service-container {
+  margin-left: 34px;
+}
+.service__item.interior .img__service-container {
+  margin-left: 5px;
+}
+.service__item.exterior .img__service-container {
+  margin-right: 23px;
+}
+.img__service {
+  width: 53px;
+  height: 60px;
+}
+.service__item.interior .img__service {
+  width: 59px;
+  height: 59px;
+}
+.service__item.exterior .img__service {
+  width: 65px;
+  height: 65px;
+}
+
+.h3__service {
+  color: #2f2e2e;
+  text-align: center;
+  font-family: "Playfair Display";
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  margin: 0;
+}
+.service__item.planning .h3__service {
+  margin-left: 35px;
+}
+.service__item.interior .h3__service {
+}
+.service__item.exterior .h3__service {
+  margin-right: 15px;
+}
+.p__service {
+  color: #2f2e2e;
+  text-align: center;
+  font-family: "Playfair Display";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  align-items: center;
+  height: 42px;
+  width: 158px;
+}
+.service__item.planning .p__service {
+  margin-left: 25px;
+  margin-top: 8px;
+}
+.service__item.interior .p__service {
+}
+.service__item.exterior .p__service {
+  margin-right: 24px;
+  margin-top: 8px;
+}
+
+/******************************************** About ******************************/
+
+.about {
+  margin-bottom: 92px;
+}
+.flex__about {
+  display: flex;
+}
+.left__about__item {
+}
+.img__about {
+  padding-left: 103px;
+}
+.right__about__item {
+  padding-right: 67px;
+  padding-left: 85px;
+  padding-top: 60px;
+}
+.h2__about {
+  color: #2f2e2e;
+  font-family: "Playfair Display";
+  font-size: 51px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1.6;
+  margin: 0;
+  padding-left: 2px;
+}
+.p__about {
+  color: #2f2e2e;
+  font-family: "Playfair Display";
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.7;
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 18px;
+}
+.read__about {
+  color: #2f2e2e;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  cursor: pointer;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+}
+.read__about:hover {
+  transform: scale(1.2);
+}
+
+/******************************************** project ******************************/
+
+.project {
+}
+.h2__project {
+  color: #2f2e2e;
+  font-family: "Playfair Display";
+  font-size: 51px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  margin: 0;
+  margin-left: 104px;
+  /* margin-top: 90px; */
+}
+
+.project__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  grid-gap: 98px 0;
+  padding: 72px 50px 0;
+  margin-bottom: 100px;
+}
+
+.project__grid div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project__grid img {
+}
+
+.project__grid p {
+  width: 178px;
+  height: 48px;
+  text-align: center;
+  margin: 0;
+  color: #2f2e2e;
+  font-family: "Playfair Display";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 12px;
+}
+
+/******************************************** Testimonial ******************************/
+
+.testimonial {
+}
+.h2__testimonial {
+  color: #000;
+  text-align: center;
+  font-family: "Playfair Display";
+  font-size: 51px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  margin: 0 auto;
+}
+.flex__testimonial {
+  display: flex;
+  gap: 20px;
+}
+.left__flex {
+  display: flex;
+}
+.img__James {
+}
+.James__text {
+}
+.h3__James {
+  color: #2f2e2e;
+  font-family: "Playfair Display";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  /* padding-left: 32px;
+  padding-top: 13px; */
+  margin: 0;
+}
+.p__James {
+  color: #2f2e2e;
+
+  font-family: "Playfair Display";
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  width: 307px;
+  height: 69px;
+  /* padding-top: 17px;
+  padding-left: 32px; */
+}
+.right__flex {
+  display: flex;
+  /* margin-left: 111px; */
+}
+.img__Abram {
+}
+.Abram__text {
+  /* margin-left: 3px; */
+}
+.h3__Abram {
+  color: #2f2e2e;
+
+  font-family: "Playfair Display";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-top: 12px;
+  padding-left: 18px;
+  margin: 0;
+}
+.p__Abram {
+  color: #2f2e2e;
+  font-family: "Playfair Display";
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  width: 307px;
+  height: 69px;
+  padding-left: 18px;
+  padding-top: 17px;
+  white-space: normal;
+}
+
+/******************************************** Media ******************************/
+@media screen and (max-width: 1410px) {
+  .img__about {
+    width: 635px;
+    height: 471px;
+  }
+}
+@media screen and (max-width: 1240px) {
+  .img__about {
+    width: 535px;
+    height: 410px;
+  }
+  .right__about__item {
+    padding-top: 0px;
+  }
+  .project__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .about {
+    margin-bottom: 50px;
+  }
+  .h2__project {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+}
 @media screen and (max-width: 1090px) {
   .nav__header {
     display: none;
   }
+  .flex__about {
+    align-items: center;
+  }
 
   .burger-menu {
     display: block;
+  }
+  .right__about__item {
+    padding-right: 0px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .flex__about {
+    flex-direction: column;
+  }
+  .right__about__item {
+    text-align: center;
+    padding-left: 0px;
+  }
+  .img__about {
+    padding-left: 0px;
+  }
+  .project__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .flex__service {
+    flex-direction: column;
+    align-items: center;
+  }
+  .service__item.planning .img__service-container,
+  .service__item.interior .img__service-container,
+  .service__item.exterior .img__service-container,
+  .service__item.planning .h3__service,
+  .service__item.interior .h3__service,
+  .service__item.exterior .h3__service,
+  .service__item.planning .p__service,
+  .service__item.interior .p__service,
+  .service__item.exterior .p__service {
+    margin: 0;
+    padding: 0;
+  }
+  .about {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .service {
+    height: 780px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .h1__header {
+    padding-left: 0px;
+    text-align: center;
+  }
+  .p__header {
+    padding-left: 0px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 482px) {
+  .h1__header {
+    width: 480px;
+    padding-top: 75px;
+  }
+  .p__header {
+    width: 480px;
+  }
+  .flex__header {
+    margin: 47px 20px 98px 20px;
+  }
+}
+@media screen and (max-width: 322px) {
+  .h1__header {
+    width: 318px;
+    padding-top: 75px;
+  }
+  .p__header {
+    width: 309px;
+  }
+  .project__grid {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .flex__header {
   }
 }
