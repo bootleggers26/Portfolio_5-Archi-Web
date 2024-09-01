@@ -173,7 +173,7 @@ body {
   font-weight: 200;
   line-height: 1.2;
   margin: 0;
-  width: 518px;
+  max-width: 518px;
   padding-left: 101px;
   padding-top: 9px;
 }
